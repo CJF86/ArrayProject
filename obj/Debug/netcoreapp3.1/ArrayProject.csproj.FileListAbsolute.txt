@@ -1,0 +1,13 @@
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.exe
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.deps.json
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.runtimeconfig.json
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.runtimeconfig.dev.json
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.dll
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\bin\Debug\netcoreapp3.1\ArrayProject.pdb
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.csprojAssemblyReference.cache
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.AssemblyInfoInputs.cache
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.AssemblyInfo.cs
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.csproj.CoreCompileInputs.cache
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.dll
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.pdb
+C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.genruntimeconfig.cache
