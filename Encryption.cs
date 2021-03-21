@@ -20,33 +20,23 @@ namespace ArrayProject
             //Creates character based array filled with letters of the alphabet
             char[] Alphabet_Constant = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'Z' };
 
-            //creates a character based array that is populated with the plaintext message
-            char[] Message_Array = Plaintext_Message.ToCharArray();
+            char[] Hidden_Message = Plaintext_Message.ToCharArray();
 
-            //creates a character based array that is populated with the encrypted message
-            char[] Secret_Array = new char[Message_Array.Length];
+            char[] Encrypted_Message = new char[Hidden_Message.Length];
 
-            //creates for loop that iterates through each character of the message array
-            for(int i = 0; i < Message_Array.Length; i++ )
+            for(int i = 0; i < Plaintext_Message.Length; i++)
             {
-                //creates a variable that obtains one character from the unencrypted secret message
-                char Plaintext_letter = Message_Array[i];
+                int Index_Value = Array.IndexOf(Alphabet_Constant, Hidden_Message); //provides the index value of the character of the hidden message within the alphabet
 
-                //finds the index of the matching value in the constant alphabet
-                int Index = Array.IndexOf(Alphabet_Constant, Plaintext_letter);
+                int Shifted_Index = (Index_Value += User_Key) % 26; //provides the shifted index value based on the user key
 
-                //creates integer that stores the value of the matching alphabet index added to the user key
-                int Letter_Position = (Index += User_Key) % 26;
+                char Encrypted_Character = Alphabet_Constant[Shifted_Index];//problem is here
 
-                char Shift_Character = Alphabet_Constant[Letter_Position];//problem is here
-
-                Secret_Array[i] = Shift_Character;
-
+                Encrypted_Message[i] = Encrypted_Character;
             }
 
-            string Encoded_Message = string.Join("", Secret_Array);
-            Console.WriteLine(Encoded_Message);
-            
+            string CipherText = String.Join("", Encrypted_Message);
+            Console.WriteLine(CipherText);
         }
     }
 }
