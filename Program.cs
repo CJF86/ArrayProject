@@ -4,7 +4,10 @@ namespace ArrayProject
 {
     class Program
     {
+        //Linux Version
 
+
+        public  const float OSVERSION = 2.2f;
         //private bool Switch = false;
         //string User_Option;
         static void Main(string[] args)
