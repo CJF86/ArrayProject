@@ -6,7 +6,7 @@ namespace ArrayProject
 {
     public class Encryption
     {
-        private int Entered_Key; //Change these to different variable names and then initialize them within another method
+        public int Entered_Key; //Change these to different variable names and then initialize them within another method
 
         private string Entered_Message; //Change these to different variable names and then initialize them within another method
 
@@ -20,11 +20,12 @@ namespace ArrayProject
 
         public string User_Message { get => Entered_Message; set => Entered_Message = value; } //allows private string to use value from user input
 
-        public void Encryption_Method(string Plaintext_Message,int Encrypt_Key) //creates encryption method for encryption
+        public string Encryption_Method(string Plaintext_Message,int Encrypt_Key) //creates encryption method for encryption
         {
-            //Creates character based array filled with letters of the alphabet
-            char[] Alphabet_Constant = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
+
+            //Creates character based array filled with letters of the alphabet
+            char[] Alphabet_Constant = Constants.Alphabet_Constant;
             char[] Hidden_Message = Plaintext_Message.ToCharArray();//Create this outside of the method to allow inheritance
 
             char[] Encrypted_Message = new char[Hidden_Message.Length];//Create this outside of method to allow inheritance
@@ -42,6 +43,7 @@ namespace ArrayProject
 
             string CipherText = String.Join("", Encrypted_Message);
             Console.WriteLine(CipherText);
+            return CipherText;
         }
     }
 }
