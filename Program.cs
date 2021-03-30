@@ -4,7 +4,10 @@ namespace ArrayProject
 {
     class Program
     {
+        //Linux Version
 
+
+        public  const float OSVERSION = 2.2f;
         //private bool Switch = false;
         //string User_Option;
         static void Main(string[] args)
@@ -39,7 +42,9 @@ namespace ArrayProject
 
                 Encryption Encryption_1 = new Encryption(User_Message, User_Key);
 
-                Encryption_1.Encryption_Method(User_Message, User_Key);
+               String encryptedMessage =  Encryption_1.Encryption_Method(User_Message, User_Key);
+                Decryption decryptor = new Decryption(encryptedMessage, User_Key);
+
 
                 Console.WriteLine("Would you like to encode a new message");
 

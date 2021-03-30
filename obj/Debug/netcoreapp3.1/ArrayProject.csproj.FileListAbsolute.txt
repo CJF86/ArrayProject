@@ -11,3 +11,9 @@ C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\Ar
 C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.dll
 C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.pdb
 C:\Users\Craig\source\repos\ArrayProject\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.genruntimeconfig.cache
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.csprojAssemblyReference.cache
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.AssemblyInfoInputs.cache
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.AssemblyInfo.cs
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.csproj.CoreCompileInputs.cache
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.dll
+F:\Github\ArrayProject\obj\Debug\netcoreapp3.1\ArrayProject.pdb

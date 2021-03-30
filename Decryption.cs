@@ -11,13 +11,19 @@ namespace ArrayProject
         int Broken_Key;
         char Decoded_Character;
 
-        public Decryption(string Plaintext_Message, int Encrypt_Key) : base(Plaintext_Message, Encrypt_Key)//creates constructor for decryption class using encryption variables
+        public Decryption(string Plaintext_Message, int Encrypt_Key)  : base(Plaintext_Message,  Encrypt_Key) //creates constructor for decryption class using encryption variables
         {
+            
         }
 
-        public void Decryption_Method():
+        public string Decryption_Method()
         {
+            string decryptedMessage = "";
 
+
+
+
+            return decryptedMessage;
         }
             
         
