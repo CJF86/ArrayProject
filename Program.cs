@@ -12,6 +12,8 @@ namespace ArrayProject
 
             string User_Option;
             bool Switch = false;
+            string Decryption_Option;
+            
 
             Console.WriteLine("Would you like to encode a message?");
 
@@ -39,7 +41,23 @@ namespace ArrayProject
 
                 Encryption Encryption_1 = new Encryption(User_Message, User_Key);
 
-                Encryption_1.Encryption_Method(User_Message, User_Key);
+                string EncryptedMessage = Encryption_1.Encryption_Method(User_Message, User_Key);
+
+                Console.WriteLine("Would you like to decrypt the message");
+
+                Decryption_Option = Console.ReadLine();
+
+                if(Decryption_Option.ToUpper() == "YES")
+                {
+                    Decryption Decryption_1 = new Decryption(User_Message, User_Key);
+
+                    Decryption_1.Decryption_Method(EncryptedMessage);
+                }
+                else if(Decryption_Option.ToUpper() == "NO")
+                {
+                    Console.WriteLine("Okay");
+                    //break;
+                }
 
                 Console.WriteLine("Would you like to encode a new message");
 

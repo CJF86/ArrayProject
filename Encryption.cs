@@ -20,7 +20,7 @@ namespace ArrayProject
 
         public string User_Message { get => Entered_Message; set => Entered_Message = value; } //allows private string to use value from user input
 
-        public void Encryption_Method(string Plaintext_Message,int Encrypt_Key) //creates encryption method for encryption
+        public string Encryption_Method(string Plaintext_Message,int Encrypt_Key) //creates encryption method for encryption
         {
             //Creates character based array filled with letters of the alphabet
             char[] Alphabet_Constant = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
@@ -42,6 +42,7 @@ namespace ArrayProject
 
             string CipherText = String.Join("", Encrypted_Message);
             Console.WriteLine(CipherText);
+            return CipherText;
         }
     }
 }
